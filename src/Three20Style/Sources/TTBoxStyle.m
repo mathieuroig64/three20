@@ -31,7 +31,7 @@
 @synthesize margin    = _margin;
 @synthesize padding   = _padding;
 @synthesize minSize   = _minSize;
-@synthesize position  = _position;
+@synthesize positionTT  = _position;
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -73,7 +73,7 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 + (TTBoxStyle*)styleWithFloats:(TTPosition)position next:(TTStyle*)next {
   TTBoxStyle* style = [[[self alloc] initWithNext:next] autorelease];
-  style.position = position;
+  style.positionTT = position;
   return style;
 }
 
@@ -95,7 +95,7 @@
   style.margin = margin;
   style.padding = padding;
   style.minSize = minSize;
-  style.position = position;
+  style.positionTT = position;
   return style;
 }
 

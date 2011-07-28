@@ -28,7 +28,7 @@
 @property (nonatomic) UIEdgeInsets  margin;
 @property (nonatomic) UIEdgeInsets  padding;
 @property (nonatomic) CGSize        minSize;
-@property (nonatomic) TTPosition    position;
+@property (nonatomic) TTPosition    positionTT;
 
 + (TTBoxStyle*)styleWithMargin:(UIEdgeInsets)margin next:(TTStyle*)next;
 + (TTBoxStyle*)styleWithPadding:(UIEdgeInsets)padding next:(TTStyle*)next;
